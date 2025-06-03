@@ -1,2 +1,19 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: grid;
+  width: 200px;
+  height: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0; /* optional */
+}
+
+.item {
+  /* No need to set position manually — grid will auto-place */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border: 1px solid #999;
+}
